@@ -1,6 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(213, 168, 255);
+}
+
 #tela{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+#inicio{
     text-align: center;
-    background-color: aquamarine;
-    width: 200px;
-    height: 200px;
+    padding-top: 50%;
+}
+
+#botao{
+    margin-top: 50px;
 }
