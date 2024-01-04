@@ -10,25 +10,13 @@
 <body>
     <div id="tela">
         <div id="inicio">
-            <h1 id="meuTexto">Letrinhas em Ação:</h1>
+            <h1><span class="cor1">L</span>e<span class="cor2">t</span><span class="cor3">r</span>i<span class="cor3">n</span><span class="cor1">h</span>a<span class="cor2">s</span> <span class="cor3">e</span><span class="cor1">m</span> <span class="cor2">A</span><span class="cor1">ç</span><span class="cor3">ã</span>o:</h1>
             <p>Aprendendo e brincando</p>
             <button id="botao">PLAY</button>
         </div>
     </div>
+    <span class="cor1"></span>
+    <span class="cor2"></span>
+    <span class="cor3"></span>
 </body>
-
-<script>
-    function mudarCorAutomaticamente() {
-      var red = Math.floor(Math.random() * 256);
-      var green = Math.floor(Math.random() * 256);
-      var blue = Math.floor(Math.random() * 256);
-
-      var novaCor = 'rgb(' + red + ',' + green + ',' + blue + ')';
-
-      document.getElementById('meuTexto').style.color = novaCor;
-    }
-
-    // Chame a função mudarCorAutomaticamente() a cada 1000 milissegundos (1 segundo)
-    setInterval(mudarCorAutomaticamente, 1000);
-  </script>
 </html>
