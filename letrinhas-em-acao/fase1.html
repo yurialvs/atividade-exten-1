@@ -10,8 +10,48 @@
 <body>
     <div id="tela">
         <div id="inicio">
-         <p>teste</p>
+            <p>FASE 01</p>
+
+            <p>Complete a palavra de acordo com a imagem:</p>
+            <br>
+
+            <img src="imagens/presente.png" alt="presen--">
+
+            <br>
+            <br>
+
+            <label for="campoTexto"><span id="palavra">PRESEN</span></label>
+            <input type="text" id="campoTexto" name="campoTexto" onblur="verificarEntrada()">
+
+            <br>
+            <br>
+
+            <button onclick="verificarEntrada()">Confirmar</button>
         </div>
     </div>
+
+    <script>
+        function verificarEntrada() {
+            var campo = document.getElementById("campoTexto").value;
+
+            if (campo.toLowerCase() === "te") {
+
+                var proxFase = document.createElement("a");
+                proxFase.innerHTML = "Próxima Fase";
+                proxFase.href = "fase2.html";
+            
+                var novoBotao = document.createElement("button");
+                novoBotao.appendChild(proxFase);
+
+                var div = document.getElementById("inicio");
+                div.appendChild(novoBotao);
+            } else {
+                var erro = document.createElement("p");
+                erro.innerHTML = "VOCÊ ERROU !";
+                var div = document.getElementById("inicio");
+                div.appendChild(erro);
+            }
+        }
+    </script>
 </body>
 </html>
