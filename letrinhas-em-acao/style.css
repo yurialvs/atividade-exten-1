@@ -6,17 +6,27 @@ body{
 
 #tela{
     width: 400px;
-    height: 600px;
+    height: 700px;
     margin: auto;
-    background-color: blueviolet;
+    background-color: rgb(73, 38, 105);
     border-radius: 5px;
 }
 
 #inicio{
     text-align: center;
-    padding-top: 50%;
+    padding-top: 60%;
 }
 
 #botao{
     margin-top: 50px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#meuTexto {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
