@@ -14,34 +14,5 @@ body{
 
 #inicio{
     text-align: center;
-    padding-top: 60%;
-}
-
-#botao{
-    margin-top: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.cor1{
-    color: rgb(252, 0, 0);
-}
-
-.cor2{
-    color: rgb(0, 255, 179);
-}
-
-.cor3{
-    color: rgb(29, 104, 202);
+    padding-top: 1%;
 }
