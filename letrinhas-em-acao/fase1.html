@@ -25,11 +25,17 @@
 
             <br>
             <br>
-
+            <!-- Botão de CONFIRMAR -->
             <button id="confirmar" onclick="verificarEntrada()">Confirmar</button>
 
-            <!-- Botão que será exibido após a condição -->
-            <button id="proxFase" style="display:none;" onclick="acaoDoNovoBotao()">Próxima Fase</button>
+            <!-- Botão de próxima fase -->
+            <button id="proxFase" style="display:none;"><a href="fase2.html">Próxima Fase</a></button>
+
+            <!-- Botão de reiniciar -->
+            <button id="reiniciar" style="display:none;"><a href="index.html">Reiniciar</a></button>
+            
+            <!-- Espaço para RESULTADO -->
+            <div id="resultado"></div>
         </div>
     </div>
 
@@ -37,22 +43,28 @@
         function verificarEntrada() {
             var campo = document.getElementById("campoTexto").value;
             
-            // Substituir o botão original pelo novo botão quando a condição for atendida
             if (campo.toLowerCase() === "te") {
-                // Ocultar o botão original
+                // Ocultar o botão CONFIRMAR
                 document.getElementById('confirmar').style.display = 'none';
                 
-                // Exibir o novo botão
+                // Exibir o botão PRÓXIMA FASE
                 document.getElementById('proxFase').style.display = 'inline';
+
+                // Adiciona "Você acertou!"
+                var resultado = document.getElementById('resultado');
+                resultado.innerText = 'VOCÊ ACERTOU !';
+            } else {
+                // Ocultar o botão CONFIRMAR
+                document.getElementById('confirmar').style.display = 'none';
+
+                // Exibir o botão REINICIAR
+                document.getElementById('reiniciar').style.display = 'inline';
+
+                // Adiciona "Você errou!"
+                var resultado = document.getElementById('resultado');
+                resultado.innerText = 'VOCÊ ERROU !';
             }
         }
-
-        function acaoDoNovoBotao() {
-            // Ação a ser executada quando o novo botão for clicado
-            alert('Novo botão clicado!');
-            // Adicione aqui o código desejado para a ação do novo botão
-        }
-
     </script>
 </body>
 </html>
