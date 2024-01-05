@@ -26,32 +26,33 @@
             <br>
             <br>
 
-            <button onclick="verificarEntrada()">Confirmar</button>
+            <button id="confirmar" onclick="verificarEntrada()">Confirmar</button>
+
+            <!-- Botão que será exibido após a condição -->
+            <button id="proxFase" style="display:none;" onclick="acaoDoNovoBotao()">Próxima Fase</button>
         </div>
     </div>
 
     <script>
         function verificarEntrada() {
             var campo = document.getElementById("campoTexto").value;
-
-            if (campo.toLowerCase() === "te") {
-
-                var proxFase = document.createElement("a");
-                proxFase.innerHTML = "Próxima Fase";
-                proxFase.href = "fase2.html";
             
-                var novoBotao = document.createElement("button");
-                novoBotao.appendChild(proxFase);
-
-                var div = document.getElementById("inicio");
-                div.appendChild(novoBotao);
-            } else {
-                var erro = document.createElement("p");
-                erro.innerHTML = "VOCÊ ERROU !";
-                var div = document.getElementById("inicio");
-                div.appendChild(erro);
+            // Substituir o botão original pelo novo botão quando a condição for atendida
+            if (campo.toLowerCase() === "te") {
+                // Ocultar o botão original
+                document.getElementById('confirmar').style.display = 'none';
+                
+                // Exibir o novo botão
+                document.getElementById('proxFase').style.display = 'inline';
             }
         }
+
+        function acaoDoNovoBotao() {
+            // Ação a ser executada quando o novo botão for clicado
+            alert('Novo botão clicado!');
+            // Adicione aqui o código desejado para a ação do novo botão
+        }
+
     </script>
 </body>
 </html>
