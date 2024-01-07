@@ -10,18 +10,18 @@
 <body>
     <div id="tela">
         <div id="inicio">
-            <p>FASE 02</p>
+            <p>FASE 04</p>
 
-            <p>Continue a ordem alfabética:</p>
+            <p>Complete a palavra de acordo com a imagem:</p>
             <br>
 
-            <img src="imagens/alfabeto.png" alt="alfabeto">
+            <img src="imagens/dinossauro.png" alt="dino">
 
             <br>
             <br>
 
-            <label for="campoTexto"><span id="palavra">A B C D</span></label>
-            <input type="text" id="campoTexto" name="campoTexto" onblur="verificarEntrada()">
+            <label for="campoTexto"><span id="palavra">DINO</span></label>
+            <input type="text" id="campoTexto" name="campoTexto" onblur="verificarEntrada()"><span id="palavra"> AURO</span>
 
             <br>
             <br>
@@ -29,7 +29,7 @@
             <button id="confirmar" onclick="verificarEntrada()">Confirmar</button>
 
             <!-- Botão de próxima fase -->
-            <button id="proxFase" style="display:none;"><a href="fase3.html">Próxima Fase</a></button>
+            <button id="proxFase" style="display:none;"><a href="fase5.html">Próxima Fase</a></button>
 
             <!-- Botão de reiniciar -->
             <button id="reiniciar" style="display:none;"><a href="index.html">Reiniciar</a></button>
@@ -43,7 +43,7 @@
         function verificarEntrada() {
             var campo = document.getElementById("campoTexto").value;
             
-            if (campo.toLowerCase() === "e") {
+            if (campo.toLowerCase() === "ss") {
                 // Ocultar o botão CONFIRMAR
                 document.getElementById('confirmar').style.display = 'none';
                 

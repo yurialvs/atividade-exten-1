@@ -41,12 +41,14 @@ img{
 }
 
 input{
-    width: 50px;
+    width: 22px;
     height: 20px;
     border: solid 1px;
     border-color: rgba(247, 0, 255, 0.445);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 button{
