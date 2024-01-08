@@ -17,6 +17,12 @@ body{
     padding-top: 50%;
 }
 
+#fase{
+    color: rgba(109, 0, 212, 0.685);
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #resultado{
     padding: 10px;
     font-size: 20px;
