@@ -10,8 +10,8 @@
 <body>
     <div id="tela">
         <div id="inicio">
-            <p>FASE 06</p>
-
+            <p>FASE 20</p>
+        
             <p>Continue a ordem alfabética:</p>
             <br>
 
@@ -20,8 +20,8 @@
             <br>
             <br>
 
-            <label for="campoTexto"><span id="palavra">J K L</span></label>
-            <input type="text" id="campoTexto" name="campoTexto" onblur="verificarEntrada()"><span id="palavra"> N</span>
+            <label for="campoTexto"><span id="palavra">D E F</span></label>
+            <input type="text" id="campoTexto" name="campoTexto" onblur="verificarEntrada()"><span id="palavra"></span>
 
             <br>
             <br>
@@ -29,7 +29,7 @@
             <button id="confirmar" onclick="verificarEntrada()">Confirmar</button>
 
             <!-- Botão de próxima fase -->
-            <button id="proxFase" style="display:none;"><a href="fase7.html">Próxima Fase</a></button>
+            <button id="proxFase" style="display:none;"><a href="fase21.html">Próxima Fase</a></button>
 
             <!-- Botão de reiniciar -->
             <button id="reiniciar" style="display:none;"><a href="index.html">Reiniciar</a></button>
@@ -43,7 +43,7 @@
         function verificarEntrada() {
             var campo = document.getElementById("campoTexto").value;
             
-            if (campo.toLowerCase() === "m") {
+            if (campo.toLowerCase() === "g") {
                 // Ocultar o botão CONFIRMAR
                 document.getElementById('confirmar').style.display = 'none';
                 
