@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Letrinhas em Ação</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="tela">
+        <div id="inicio">
+            <p id ="fase">FASE 40</p>
+
+            <p>Complete a palavra de acordo com a imagem:</p>
+            <br>
+
+            <img src="imagens/extintor.png" alt="extintor">
+
+            <br>
+            <br>
+
+            <label for="campoTexto"><span id="palavra">E</span></label>
+            <input type="text" id="campoTexto" name="campoTexto" onblur="verificarEntrada()"><span id="palavra"> TINTOR</span>
+
+            <br>
+            <br>
+            <!-- Botão de CONFIRMAR -->
+            <button id="confirmar" onclick="verificarEntrada()">Confirmar</button>
+
+            <!-- Botão de próxima fase -->
+            <button id="proxFase" style="display:none;"><a href="fase41.html">Próxima Fase</a></button>
+
+            <!-- Botão de reiniciar -->
+            <button id="reiniciar" style="display:none;"><a href="index.html">Reiniciar</a></button>
+            
+            <!-- Espaço para RESULTADO -->
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script>
+        function verificarEntrada() {
+            var campo = document.getElementById("campoTexto").value;
+            
+            if (campo.toLowerCase() === "x") {
+                // Ocultar o botão CONFIRMAR
+                document.getElementById('confirmar').style.display = 'none';
+                
+                // Exibir o botão PRÓXIMA FASE
+                document.getElementById('proxFase').style.display = 'inline';
+
+                // Adiciona "Você acertou!"
+                var resultado = document.getElementById('resultado');
+                resultado.innerText = 'VOCÊ ACERTOU !';
+            } else {
+                // Ocultar o botão CONFIRMAR
+                document.getElementById('confirmar').style.display = 'none';
+
+                // Exibir o botão REINICIAR
+                document.getElementById('reiniciar').style.display = 'inline';
+
+                // Adiciona "Você errou!"
+                var resultado = document.getElementById('resultado');
+                resultado.innerText = 'VOCÊ ERROU !';
+            }
+        }
+    </script>
+</body>
+</html>

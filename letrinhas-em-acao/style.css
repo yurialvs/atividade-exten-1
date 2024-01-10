@@ -58,10 +58,13 @@ input{
 }
 
 button{
-    border-color: rgba(0, 0, 0, 0.37);
-    color: rgba(0, 0, 0, 0.753);
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.733);
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
     font-weight: bolder;
-    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.562);
 }
 
 a{

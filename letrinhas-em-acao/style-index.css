@@ -50,3 +50,9 @@ h1 {
 .cor3{
     color: rgb(29, 104, 202);
 }
+
+footer {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 14px;
+}
